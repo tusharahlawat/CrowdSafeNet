@@ -1,0 +1,113 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body - Remove background from body */
+
+
+/* Login Container */
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  color:antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #330040, #000000); /* Gradient background specific to the login page */
+}
+
+/* Login Card */
+.login-card {
+  background: rgba(51, 0, 64, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.4);
+  width: 400px;
+  max-width: 90%;
+  backdrop-filter: blur(10px);
+}
+
+/* Title */
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.input-field::placeholder {
+  color: rgba(236, 231, 231, 0.6);
+}
+
+.input-field:focus {
+  border-color: #a855f7;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #a855f7, #7b2cbf);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #7b2cbf, #a855f7);
+  transform: scale(1.05);
+}
+
+/* Clickable Link Styling */
+.link {
+  color: #a855f7;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #c084fc;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff5757;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .login-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}

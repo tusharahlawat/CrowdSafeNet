@@ -1,0 +1,85 @@
+/* Ensure full-page background coverage */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #330040, #000000); /* Purple to Black gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Welcome Page Container */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: inherit;
+}
+
+/* Welcome Card */
+.welcome-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.4);
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Title Styling */
+.welcome-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #a855f7; /* Purple accent */
+}
+
+/* Motto Styling */
+.welcome-motto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #fbbf24; /* Yellow accent */
+}
+
+/* Button Styling */
+.welcome-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #a855f7, #7b2cbf);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.welcome-button:hover {
+  background: linear-gradient(135deg, #7b2cbf, #a855f7);
+  transform: scale(1.05);
+}
+
+/* Improve Responsiveness */
+@media (max-width: 500px) {
+  .welcome-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}

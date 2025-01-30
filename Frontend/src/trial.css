@@ -1,0 +1,28 @@
+.websocket-display {
+    padding: 20px;
+  }
+  
+  .video-feeds {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .video-feed {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .video-feed img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .alert-section, .threat-section {
+    margin-top: 20px;
+  }
+  
+  .alert-section h3, .threat-section h3 {
+    margin-bottom: 10px;
+  }
+  

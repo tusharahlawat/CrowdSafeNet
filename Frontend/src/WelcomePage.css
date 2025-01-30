@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1610209455607-89e8b3e0e393?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHB1cnBsZSUyMHNwYWNlfGVufDB8fDB8fHww'); /* Relative path from public folder */
+  background-size: cover; /* Ensures the GIF covers the entire container */
+  background-position: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+
+
+/* Main Card */
+.welcome-card {
+  background: linear-gradient(145deg, rgba(87, 15, 105, 0.8), rgba(25, 4, 25, 0.8)); /* Soft gradient from dark purple to lighter purple */
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2); /* Softer shadow for a more elegant effect */
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 2; /* Ensure the card is above the background */
+  backdrop-filter: blur(15px); /* Slight blur to make the card feel smooth */
+  transform: translateY(-30px); /* Initial card position for animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-card:hover {
+  transform: translateY(0); /* Smooth animation to lift the card when hovered */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover for depth */
+}
+
+/* Title Styling */
+.welcome-title {
+  font-size: 2.5rem;
+  color: #ffffff; /* White color for the title to make it stand out */
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Modern, clean font for the title */
+  font-weight: 600; /* Bold for a strong title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Soft shadow to make the title pop */
+}
+
+/* Highlighted Text */
+.highlight {
+  color: #ff0066; /* Bright accent color for the highlighted text */
+}
+
+/* Motto Styling */
+.welcome-motto {
+  font-size: 1.4rem;
+  color: #f0f0f0; /* Very light gray for better readability */
+  margin-bottom: 30px;
+  font-style: italic; /* Italicize the motto for a special effect */
+  font-weight: 500; /* Slightly bolder for emphasis */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for the motto */
+}
+
+/* Button Styling */
+.welcome-button {
+  padding: 15px 30px;
+  background-color: #6a0dad; /* Soft purple for the button */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.welcome-button:hover {
+  background-color: #9b33cc; /* Lighter purple on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.welcome-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.7); /* Glowing effect when button is focused */
+}
+
+/* Link Styling */
+.link {
+  color: #ff0066; /* Same bright accent color as for highlight */
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #c084fc;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .welcome-card {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .welcome-motto {
+    font-size: 1.3rem;
+  }
+
+  .welcome-button {
+    padding: 14px 25px;
+    font-size: 1.1rem;
+  }
+}
